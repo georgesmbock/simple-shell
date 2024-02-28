@@ -101,6 +101,9 @@ typedef struct builtin
 	int (*func)(info_t *);
 } builtin_table;
 
+/* search.cwd.c*/
+char *search_cwd(char *filename, char *er);
+
 /* toem_parser.c */
 int is_cmd(info_t *, char *);
 char **dup_chars(char *, int, int);
