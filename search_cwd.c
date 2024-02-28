@@ -13,7 +13,7 @@ char *search_cwd(char *filename, char *er)
 	struct dirent *sd;
 	char *ret;
 	int idx = 0;
-	int i;
+	int i = 0;
 
 	while (filename[idx])
 		idx++;
